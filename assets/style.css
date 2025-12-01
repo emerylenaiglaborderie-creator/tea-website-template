@@ -1,0 +1,174 @@
+body{
+    font-family: Helvetica, Arial,  sans-serif;
+    color: seashell;
+    background-color: black;
+    opacity:0.9;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    background-color: black;
+    height:69px;
+    border-bottom: 1px solid seashell;
+    width: 100%;
+    z-index: 10;
+
+}
+.header img {
+    display: flex;
+    float: left;
+    margin: 10px;
+    height: 50px;
+    width:auto;
+}
+
+.header ul {
+    list-style-type: none;
+    float: right;
+}
+
+.header li {
+    display: inline-flex;
+    justify-content:right;
+    padding: 20px;
+    font-size: large;
+}
+
+/* MISSION SECTION */
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.container img {
+    width:1200px;
+    height:700px;
+    object-fit: cover;
+    margin-top:70px;
+}
+
+.container h2 {
+    position: absolute;
+    top:375px;
+    background-color: black;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.container h4 {
+    position:absolute;
+    background-color: black;
+    width: 100%;
+    top:420px;
+    padding-bottom:10px;
+}
+
+/* TEA OF THE MONTH SECTION */
+
+.tea-of-the-month {
+    padding:40px 20px;
+    text-align: center;
+}
+
+.tea-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap:40px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.tea-card {
+    width:300px;
+    text-align: center;
+    background: transparent;
+}
+
+.tea-card img {
+    width: 300px;
+    height:200px;
+    display: block;
+    object-fit: cover;
+}
+
+.tea-card figcaption {
+    margin-top:10px;
+}
+
+/* LOCATION SECTION */
+
+.locations {
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* texte au-dessus */
+
+}
+
+
+.img-locations {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+    z-index: 0; /* derrière le texte */
+
+}
+
+.locations h2 {
+    position: relative; /* nécessaire pour que z-index s’applique */
+    z-index: 1;         /* passe devant l’image */
+    padding-bottom: 260%;
+
+}
+
+.container-left {
+    justify-content: left;
+    position: absolute;   /* superpose le texte sur l’image */
+    top: 50%;             /* centre verticalement */
+    left: 25%;
+    transform: translate(-75%, -50%); /* ajuste le centrage */
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+}
+
+.container-center {
+    justify-content: center;
+    position: absolute;
+    top: 50%;             /* centre verticalement */
+    left: 50%;
+    transform: translate(-50%, -50%); /* ajuste le centrage */
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+}
+
+.container-right{
+    justify-content: right;
+    position: absolute;
+    top: 50%;             /* centre verticalement */
+    left: 75%;
+    transform: translate(-25%, -50%); /* ajuste le centrage */
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+}
+
+.legal {
+    text-align: left;
+}
